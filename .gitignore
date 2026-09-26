@@ -1,0 +1,18 @@
+# Secrets: the SAv5 update key must never be committed
+bayline-update-key.hex
+*.hex
+
+# Wire captures from lab runs
+*.jsonl
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
