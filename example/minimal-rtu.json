@@ -1,0 +1,16 @@
+{
+  "name": "Minimal lab RTU",
+  "outstation": 10,
+  "master": 1,
+  "event_max": 200,
+  "simulate": false,
+  "points": [
+    {"kind": "bi", "index": 0, "name": "Breaker closed", "value": 1, "class": 1},
+    {"kind": "bi", "index": 1, "name": "Door alarm", "value": 0, "class": 1},
+    {"kind": "bo", "index": 0, "name": "Breaker control", "value": 1, "class": 0, "feedback": 0},
+    {"kind": "ai", "index": 0, "name": "Bus voltage", "value": 11.0, "units": "kV", "class": 2, "deadband": 0.05},
+    {"kind": "ai", "index": 1, "name": "Load current", "value": 120, "units": "A", "class": 2, "deadband": 5},
+    {"kind": "ao", "index": 0, "name": "Voltage setpoint", "value": 11.0, "units": "kV", "low": 10.0, "high": 12.0},
+    {"kind": "ctr", "index": 0, "name": "Breaker operations", "value": 0, "class": 3}
+  ]
+}
